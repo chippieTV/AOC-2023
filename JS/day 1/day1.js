@@ -1,12 +1,12 @@
 const fs = require('node:fs');
 
-fs.readFile('./data', 'utf8', (err, data) => {
+fs.readFile('./day1.data', 'utf8', (err, data) => {
     if (err) {
         console.error(err);
         return;
     }
     const lines = data.split('\n');
-console.log(lines.length)
+    
     // 0-9 == 48-58
     const sum = lines.reduce((acc, line) => {
         let first = 0;

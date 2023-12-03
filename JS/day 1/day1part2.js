@@ -61,7 +61,7 @@ const findFirstAndLastNumbers = (input) => {
 
 
 
-fs.readFile('./data', 'utf8', (err, data) => {
+fs.readFile('./day1.data', 'utf8', (err, data) => {
     if (err) {
         console.error(err);
         return;
