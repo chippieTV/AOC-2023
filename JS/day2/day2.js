@@ -6,16 +6,18 @@ const parseLine = (input) => {
     const picks = input.split(":")[1].split(";").flatMap(run => run.split(","));
 
     for (pick of picks) {
-        const [_, v, k] = pick.split(" ");
+        const [_, _v, k] = pick.split(" ");
         // console.log(v, k)
+
+        const v = parseInt(_v, 10);
 
         switch(k) {
             case "red":
-                if (parseInt(v, 10) > 12) return 0;
+                if (v > 12) return 0;
             case "green":
-                if (parseInt(v) > 13) return 0;
+                if (v > 13) return 0;
             case "blue":
-                if (parseInt(v) > 14) return 0;
+                if (v > 14) return 0;
         }
     }
 
