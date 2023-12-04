@@ -136,21 +136,8 @@ fs.readFile('./day3.data', 'utf8', (err, data) => {
             }
 
         }
-        // console.log(line)
-        
-
     }
 
-
-    //     for (let x = 0; x < width; x++) {
-
-    //     }
-
-    // console.log(symbols)
-    // console.log(CoordsToCheck.size)
     console.log(PartNumbers.length)
     console.log(PartNumberSum)
-
-
-
 });
